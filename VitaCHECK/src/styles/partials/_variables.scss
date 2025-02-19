@@ -1,0 +1,95 @@
+//VitaCHECK colors
+
+$primary-color-black: #0c1e1a;
+$primary-color-forest-green: #1e6655;
+$primary-color-pistachio: #effaf7;
+$secondary-color-sea-green: #b7cec9;
+$secondary-color-sage: #e4efec;
+$secondary-color-white: #ffffff;
+
+// font sizes desktop and tablets
+
+$desktop-tablet-wordmark-font-size: 2.5rem;
+$desktop-tablet-title-font-size: 3.25rem;
+$desktop-tablet-heading-font-size: 1.5rem;
+$desktop-tablet-body-copy-font-size: 1.25rem;
+$desktop-tablet-small-body-copy-font-size: 0.75rem;
+$desktop-tablet-labels-font-size: 0.875rem;
+
+//font sizes mobile
+
+$mobile-wordmark-font-size: 2rem;
+$mobile-title-font-size: 1.625rem;
+$mobile-heading-font-size: 1.125rem;
+$mobile-label-body-copy-font-size: 0.75rem;
+$mobile-small-body-copy-font-size: 0.625rem;
+
+// line height desktop and tablets
+
+$desktop-tablet-wordmark-line-height: 2.5rem;
+$desktop-tablet-title-line-height: 4.125rem;
+$desktop-tablet-heading-line-height: 1.875rem;
+$desktop-tablet-body-copy-line-height: 1.625rem;
+$desktop-tablet-small-body-copy-line-height: 0.938rem;
+$desktop-tablet-labels-line-height: 1.094rem;
+
+//line height mobile
+
+$mobile-wordmark-line-height: 2rem;
+$mobile-title-line-height: 2.375rem;
+$mobile-heading-line-height: 1.438rem;
+$mobile-label-body-copy-line-height: 0.938rem;
+$mobile-small-body-copy-line-height: 0.75rem;
+
+//font weight mobile desktop and tablets
+
+$mobile-wordmark-font-weight: 400;
+$mobile-title-body-copy-light-font-weight: 300;
+$mobile-heading-label-body-copy-font-weight: 500;
+
+// padding desktop and tablets
+
+// $desktop-tablet-padding-headlines: 3rem;
+// $desktop-tablet-padding: 2.25rem;
+
+//padding mobile desktop and tablets
+
+$mobile-padding-headlines: 1.5rem;
+$mobile-padding-between-content: 3rem;
+$mobile-padding-after-img: 0.5rem;
+$mobile-padding: 1rem;
+
+// Layout and margins desktop and tablets
+
+$desktop-column: 5rem;
+$desktop-tablet-gutter: 1.5rem;
+
+// Layout and margins mobile
+
+$mobile-margin-gutter: 1rem;
+
+// Breakpoints
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+//button radius width height padding mobile
+
+$mobile-button-padding-top-bottom: 0.5rem;
+$mobile-button-padding-left-right: 1rem;
+$button-border-radius: 0.125rem;
+
+//button radius width height padding desktop and tablet
+
+$desktop-tablet-button-padding-top-bottom: 0.688rem;
+$desktop-tablet-button-padding-left-right: 1.375rem;
+
+//Tags desktop and tablets
+
+$tablet-tag-padding-top-bottom:0.5rem;
+$tablet-tag-padding-left-right:0.75rem;
+
+//Tags mobiles
+
+$mobile-tag-padding-top-bottom:0.375rem;
+$mobile-tag-padding-left-right:0.5rem;
