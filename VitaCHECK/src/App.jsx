@@ -3,6 +3,7 @@ import "./App.scss";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import VitaminPage from "./pages/VitaminPage/VitaminPage";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/vitamins" element={<VitaminPage />}></Route>
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </BrowserRouter>
   );
 }
