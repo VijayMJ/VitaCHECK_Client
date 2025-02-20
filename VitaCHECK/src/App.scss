@@ -2,6 +2,6 @@
 @use "./styles/partials/mixins" as *;
 @use "./styles/partials/variables" as *;
 
-.page-container{
-  padding: 0 $mobile-padding;
+*{
+  background-color: #C4DAD2;
 }

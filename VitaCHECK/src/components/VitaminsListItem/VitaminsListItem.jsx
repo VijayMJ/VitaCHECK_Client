@@ -6,14 +6,12 @@ function VitaminsListItem({ item }) {
   console.log(item);
   return (
     <li className="item">
-      <div className="item__name-conatiner">
-        <Link to="/" className="item__name-link">
-          <p className="item__name">{item.name}</p>
-        </Link>
+      <Link to="/" className="item__name-link">
+        <p className="item__name">{item.name}</p>
         <p className="item__amount">
           {item.amount}/{item.unit}
         </p>
-      </div>
+      </Link>
     </li>
   );
 }
