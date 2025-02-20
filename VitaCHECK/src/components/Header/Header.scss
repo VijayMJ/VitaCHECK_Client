@@ -1,0 +1,14 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.header-container {
+  padding: 0 $mobile-padding;
+  display: flex;
+  justify-content: center;
+  background-color: $primary-color-forest-green;
+
+  &__logo {
+    font-family: "Newsreader", Courier, monospace;
+    background-color: $primary-color-forest-green;
+  }
+}
