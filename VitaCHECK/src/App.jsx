@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import './App.scss'
-
+import { useState } from "react";
+import "./App.scss";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import VitaminPage from "./pages/VitaminPage/VitaminPage";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <p className="read-the-docs">
-        vijay
-      </p>
-    </>
-  )
+    <BrowserRouter>
+      {/* <Header/> */}
+      <Routes>
+        <Route path="/vitamins" element={<VitaminPage />}></Route>
+      </Routes>
+      {/* <Footer/> */}
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

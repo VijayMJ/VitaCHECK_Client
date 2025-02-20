@@ -1,0 +1,10 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.list {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+}

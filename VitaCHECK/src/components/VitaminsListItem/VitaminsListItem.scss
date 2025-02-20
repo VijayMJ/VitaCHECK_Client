@@ -1,0 +1,10 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.item {
+  border-bottom: 1px solid #bdc5d5;
+  &__name-conatiner {
+    display: flex;
+    justify-content: space-between;
+  }
+}

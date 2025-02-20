@@ -1,4 +1,4 @@
-@use "./typography.scss" as * ;
+@use "./typography.scss" as *;
 @use "./mixins.scss" as *;
 @use "./variables.scss" as *;
 
@@ -10,28 +10,29 @@
   box-sizing: border-box;
 }
 
-  body,
-  textarea,
-  * {
-    font-family: "Outfit", Arial, Helvetica, sans-serif;;
-  }
+body,
+textarea,
+* {
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  color: $primary-color-black;
+  background-color: $secondary-color-white;
+}
 
-  h1,
-  h2 {
-    font-family: "Newsreader", Arial, Helvetica, sans-serif;
-    @include mobile-wordmark;
-    @include tablet {
-      @include tablet-wordmark;
-    }
+h1,
+h2 {
+  font-family: "Newsreader", Arial, Helvetica, sans-serif;
+  @include mobile-wordmark;
+  @include tablet {
+    @include tablet-wordmark;
   }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
