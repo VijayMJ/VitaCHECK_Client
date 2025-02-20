@@ -11,7 +11,6 @@ function VitaminsContainer() {
     try {
       const responseVitamins = await axios.get(`${BASE_URL}vitamins`);
       setVitamins(responseVitamins.data);
-    //   console.log(responseVitamins.data);
     } catch (error) {
       console.log("Error: could not fetch vitamins data");
     }

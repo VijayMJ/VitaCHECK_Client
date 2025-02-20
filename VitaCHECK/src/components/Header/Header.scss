@@ -2,13 +2,14 @@
 @use "../../styles/partials/variables" as *;
 
 .header-container {
-  padding: 0 $mobile-padding;
+  padding: $mobile-padding;
   display: flex;
   justify-content: center;
-  background-color: $primary-color-forest-green;
+  background-color: #16423C;
 
   &__logo {
     font-family: "Newsreader", Courier, monospace;
-    background-color: $primary-color-forest-green;
+    color: $secondary-color-white;
+    background-color: #16423C;
   }
 }

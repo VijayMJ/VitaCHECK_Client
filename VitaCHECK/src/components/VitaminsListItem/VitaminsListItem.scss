@@ -3,8 +3,22 @@
 
 .item {
   border-bottom: 1px solid #bdc5d5;
+
   &__name-conatiner {
+  }
+
+  &__name-link {
     display: flex;
     justify-content: space-between;
+
+    &:hover {
+      background-color: #6a9c89;
+    }
+
+    &:hover .item__name,
+    &:hover .item__amount {
+      background-color: #6a9c89;
+      color: $secondary-color-white;
+    }
   }
 }

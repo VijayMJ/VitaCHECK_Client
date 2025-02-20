@@ -5,6 +5,7 @@ import VitaminsContainer from "../../components/VitaminsContainer/VitaminsContai
 function VitaminPage() {
   return (
     <article className="vitamins-page-container">
+      <h1>Essential Daily Vitamins for Adults</h1>
       <VitaminsContainer />
     </article>
   );
