@@ -2,14 +2,13 @@
 @use "../../styles/partials/variables" as *;
 
 .item {
-  border-bottom: 1px solid #bdc5d5;
-
-  &__name-conatiner {
-  }
+  padding-bottom: $mobile-padding/2;
 
   &__name-link {
     display: flex;
     justify-content: space-between;
+    @include tag-clickable;
+    background-color: inherit;
 
     &:hover {
       background-color: #6a9c89;
