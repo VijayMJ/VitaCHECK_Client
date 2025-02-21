@@ -1,0 +1,31 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.fruit-item {
+  display: flex;
+  @include tag-clickable;
+  border: 1px solid;
+  background-color: #e9efec;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: $mobile-padding/4;
+    background-color: inherit;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+  }
+
+  &__heading {
+    background-color: inherit;
+  }
+
+  &__text {
+    padding-top: $mobile-padding/4;
+    background-color: inherit;
+  }
+}

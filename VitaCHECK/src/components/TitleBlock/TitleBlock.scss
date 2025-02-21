@@ -1,0 +1,16 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.title-block {
+  display: flex;
+  gap: 1rem;
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__header {
+    padding: $mobile-padding 0;
+  }
+}

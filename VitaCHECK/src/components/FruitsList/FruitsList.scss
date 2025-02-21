@@ -1,0 +1,8 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.fruit-container{
+    &__item{
+    // padding: $mobile-padding ;
+    }
+}

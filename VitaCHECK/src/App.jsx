@@ -5,6 +5,7 @@ import VitaminPage from "./pages/VitaminPage/VitaminPage";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
+import FruitPage from "./pages/FruitPage/FruitPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/vitamins" element={<VitaminPage />}></Route>
+        <Route path="/vitamins/:id/fruits" element={<FruitPage/>}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
