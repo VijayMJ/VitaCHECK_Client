@@ -12,12 +12,14 @@
     flex-direction: column;
     gap: $mobile-padding/4;
     background-color: inherit;
+    flex: 1;
   }
 
   &__box {
     display: flex;
     flex-direction: column;
     background-color: inherit;
+    flex: 1;
   }
 
   &__heading {

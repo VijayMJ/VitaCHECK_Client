@@ -5,11 +5,18 @@
   padding: $mobile-padding;
   display: flex;
   justify-content: center;
-  background-color: #16423C;
+  align-items: center;
+  background-color: #16423c;
+  height: 100px;
+
+
+  &__link {
+    background-color: #16423c;
+  }
 
   &__logo {
     font-family: "Newsreader", Courier, monospace;
     color: $secondary-color-white;
-    background-color: #16423C;
+    background-color: #16423c;
   }
 }
