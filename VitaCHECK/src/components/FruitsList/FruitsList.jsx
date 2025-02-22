@@ -4,13 +4,11 @@ import FruitsListItem from "../FruitsListItem/FruitsListItem";
 
 function FruitsList({ items }) {
   return (
-    <div className="fruit-container">
-      <ul className="fruit-container__item">
-        {items.map((item) => {
-            return <FruitsListItem key={item.fruitId } item={item} />;
-        })}
-      </ul>
-    </div>
+    <ul className="fruit-container">
+      {items.map((item) => {
+        return <FruitsListItem key={item.fruitId} item={item} />;
+      })}
+    </ul>
   );
 }
 
