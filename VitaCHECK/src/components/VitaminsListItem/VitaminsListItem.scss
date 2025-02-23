@@ -3,21 +3,29 @@
 
 .item {
   padding-bottom: $mobile-padding/2;
+  display: flex;
+  justify-content: space-between;
+  @include tag-clickable;
+  background-color: #e9efec;
+  gap: 1rem;
 
-  &__name-link {
-    display: flex;
-    justify-content: space-between;
-    @include tag-clickable;
+  &:hover {
+    background-color: #6a9c89;
+  }
+
+  &:hover .item__name,
+  &:hover .item__amount {
+    background-color: #6a9c89;
+    color: $secondary-color-white;
+  }
+
+  &__name {
     background-color: inherit;
+    font-size: 1.4rem;
+  }
 
-    &:hover {
-      background-color: #6a9c89;
-    }
-
-    &:hover .item__name,
-    &:hover .item__amount {
-      background-color: #6a9c89;
-      color: $secondary-color-white;
-    }
+  &__amount {
+    background-color: inherit;
+    font-size: 1.4rem;
   }
 }

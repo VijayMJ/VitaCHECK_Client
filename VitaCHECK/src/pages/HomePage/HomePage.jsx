@@ -11,7 +11,9 @@ function HomePage() {
           Healthy habits start with the right vitamins.
         </h1>
         <Link className="hero-image__btn-link" to="/vitamins">
-          <button className="hero-image__btn">Find Yours Daily Requirement</button>
+          <button className="hero-image__btn">
+            Find Yours Daily Requirement
+          </button>
         </Link>
       </div>
       <img className="hero-image" src={Hero} alt="hero image" />

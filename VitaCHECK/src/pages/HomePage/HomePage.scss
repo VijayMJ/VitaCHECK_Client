@@ -2,8 +2,9 @@
 @use "../../styles/partials/variables" as *;
 
 .hero-image {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  object-fit: fill;
 
   &__text-container {
     display: flex;
@@ -11,17 +12,32 @@
     align-items: center;
     padding: $mobile-padding;
     gap: $mobile-padding;
+
+    @include tablet {
+      padding: $desktop-tablet-gutter;
+    }
   }
 
   &__text {
     color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    @include mobile-wordmark;
+
+    @include tablet {
+      @include tablet-wordmark;
+    }
   }
 
   &__btn {
     @include tag-clickable;
     color: $primary-color-black;
     background-color: #c4dad2;
+    background-color: #e9efec;
+    @include mobile-heading;
+
+    @include tablet{
+        @include tablet-heading;
+    }
 
     &:hover {
       background-color: #6a9c89;

@@ -3,4 +3,14 @@
 
 .fruit-box {
   padding: 0 $mobile-padding;
+
+  @include tablet {
+    padding: $desktop-tablet-gutter;
+  }
+
+  @include desktop {
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: $mobile-padding-headlines 0;
+  }
 }
