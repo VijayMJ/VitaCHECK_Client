@@ -1,6 +1,15 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-.footer{
-    padding: $mobile-padding;
+.footer {
+  display: flex;
+  padding: $mobile-padding;
+  justify-content: center;
+  align-items: center;
+  @include mobile-heading;
+
+  @include tablet {
+    padding: $desktop-tablet-gutter;
+    @include tablet-heading;
+  }
 }

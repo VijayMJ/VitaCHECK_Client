@@ -14,7 +14,7 @@ function TitleBlock() {
         />
       </Link>
       <h1 className="title-block__header">
-        Discover the Vitamins in Your Favorite Fruits
+        Discover the Vitamins in Your Favorite Food
       </h1>
     </div>
   );

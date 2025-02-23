@@ -2,9 +2,19 @@
 @use "../../styles/partials/variables" as *;
 
 .list {
-  &__heading {
+  &__heading-conatiner {
     display: flex;
     justify-content: space-between;
     padding-bottom: 1rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

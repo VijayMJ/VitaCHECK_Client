@@ -5,6 +5,16 @@
   padding: 0 1rem;
   width: 100%;
 
+  @include tablet {
+    padding: $desktop-tablet-gutter;
+  }
+
+  @include desktop {
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: $mobile-padding-headlines 0;
+  }
+
   &__header-box {
     display: flex;
     gap: 1rem;
@@ -17,5 +27,7 @@
 
   &__header {
     padding: $mobile-padding 0;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 }
