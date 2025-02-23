@@ -1,0 +1,111 @@
+@use "./variables" as *;
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin mobile-wordmark {
+  font-size: $mobile-wordmark-font-size;
+  line-height: $mobile-wordmark-line-height;
+  font-weight: $mobile-wordmark-font-weight;
+}
+
+@mixin mobile-title {
+  font-size: $mobile-title-font-size;
+  line-height: $mobile-title-line-height;
+  font-weight: $mobile-title-body-copy-light-font-weight;
+}
+
+@mixin mobile-heading {
+  font-size: $mobile-heading-font-size;
+  line-height: $mobile-heading-line-height;
+  font-weight: $mobile-heading-label-body-copy-font-weight;
+}
+
+@mixin mobile-body-copy {
+  font-size: $mobile-label-body-copy-font-size;
+  line-height: $mobile-label-body-copy-line-height;
+  font-weight: $mobile-heading-label-body-copy-font-weight;
+}
+
+@mixin mobile-small-body-copy {
+  font-size: $mobile-small-body-copy-font-size;
+  line-height: $mobile-small-body-copy-line-height;
+  font-weight: $mobile-title-body-copy-light-font-weight;
+}
+
+@mixin mobile-label {
+  font-size: $mobile-label-body-copy-font-size;
+  line-height: $mobile-label-body-copy-line-heigh;
+  font-weight: $mobile-heading-label-body-copy-font-weight;
+}
+
+// Desktop tablet mixins
+
+@mixin tablet-wordmark {
+  font-size: $desktop-tablet-wordmark-font-size;
+  line-height: $desktop-tablet-wordmark-line-height;
+  font-weight: $mobile-wordmark-font-weight;
+}
+
+@mixin tablet-title {
+  font-size: $desktop-tablet-title-font-size;
+  line-height: $desktop-tablet-title-line-height;
+  font-weight: $mobile-title-body-copy-light-font-weight;
+}
+
+@mixin tablet-heading {
+  font-size: $desktop-tablet-heading-font-size;
+  line-height: $desktop-tablet-heading-line-height;
+  font-weight: $mobile-heading-label-body-copy-font-weight;
+}
+
+@mixin tablet-body-copy {
+  font-size: $desktop-tablet-body-copy-font-size;
+  line-height: $desktop-tablet-body-copy-line-height;
+  font-weight: $mobile-heading-label-body-copy-font-weight;
+}
+
+@mixin tablet-small-body-copy {
+  font-size: $mobile-small-body-copy-font-size;
+  line-height: $mobile-small-body-copy-line-height;
+  font-weight: $mobile-heading-label-body-copy-font-weight;
+}
+
+@mixin tablet-label {
+  font-size: $desktop-tablet-labels-font-size;
+  line-height: $desktop-tablet-labels-line-height;
+  font-weight: $mobile-heading-label-body-copy-font-weight;
+}
+
+@mixin tag-clickable{
+  padding: $mobile-tag-padding-top-bottom $mobile-tag-padding-left-right ;
+  background-color: $secondary-color-white;
+  color:$primary-color-forest-green;
+  border-radius: .75rem;
+  border: 1px solid $primary-color-forest-green;
+
+  @include tablet{
+    padding: $tablet-tag-padding-top-bottom $tablet-tag-padding-left-right;
+  }
+}
+
+@mixin tag-non-clickable{
+  padding: $mobile-tag-padding-top-bottom $mobile-tag-padding-left-right ;
+  background-color: $secondary-color-white;
+  color:$primary-color-black;
+  border-radius: .75rem;
+  border: 1px solid $secondary-color-sea-green;
+
+  @include tablet{
+    padding: $tablet-tag-padding-top-bottom $tablet-tag-padding-left-right;
+  }
+}

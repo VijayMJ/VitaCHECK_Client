@@ -1,0 +1,30 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.header-container {
+  padding: $mobile-padding;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16423c;
+  height: 6.25rem;
+
+  @include tablet {
+    padding: $desktop-tablet-gutter;
+  }
+
+  &__link {
+    background-color: #16423c;
+  }
+
+  &__logo {
+    font-family: "Newsreader", Courier, monospace;
+    color: $secondary-color-white;
+    background-color: #16423c;
+    @include mobile-wordmark;
+
+    @include tablet {
+      @include tablet-wordmark;
+    }
+  }
+}
